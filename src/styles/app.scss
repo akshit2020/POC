@@ -1,0 +1,30 @@
+@import "./common.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    background: $base_color;
+}
+
+
+.wrapper{
+    @extend .clearfix;
+    width: 100%;
+    min-width: 800px;
+    > div{
+        float: left;
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+}
+

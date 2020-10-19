@@ -1,0 +1,43 @@
+
+/*
+*  Theme Color
+*/
+
+$base_color: #4B687E;
+$p1_color: #BFBFBF;
+$p2_color: #F2F2F2;
+$p3_color: #818181;
+$p4_color: #F2F2F2;
+
+
+.clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+.btn{
+    padding: 9px 10px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    min-width: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.bgrey{
+    @extend .btn;
+    background: #F2F2F2;
+    border: $p1_color solid 1px;
+}
+
+.bblue{
+    @extend .btn;
+    background: #2095F3;
+    color: #fff;
+}
